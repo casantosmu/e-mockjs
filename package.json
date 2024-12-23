@@ -1,0 +1,42 @@
+{
+  "name": "e-mockjs",
+  "version": "0.0.0",
+  "description": "A simple mock SMTP server to capture emails during testing.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casantosmu/e-mockjs.git"
+  },
+  "author": {
+    "name": "Carlos Santos",
+    "email": "casantosmu@gmail.com",
+    "url": "https://casantosmu.com"
+  },
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -fr dist && tsc",
+    "test": "node --import tsx --test index.test.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mock",
+    "testing",
+    "smtp",
+    "server"
+  ],
+  "dependencies": {
+    "mailparser": "^3.7.2",
+    "smtp-server": "^3.13.6"
+  },
+  "devDependencies": {
+    "@types/mailparser": "^3.4.5",
+    "@types/smtp-server": "^3.5.10",
+    "nodemailer": "^6.9.16",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
